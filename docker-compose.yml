@@ -1,4 +1,4 @@
-version: "3.8"
+version: '3.8'
 
 services:
   main-db:
@@ -10,8 +10,8 @@ services:
         protocol: tcp
     environment:
       - POSTGRES_DB=maindb
-      - POSTGRES_PASSWORD=!ChangeMe!
-      - POSTGRES_USER=nextjs
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=postgres
     volumes:
       - db_data:/var/lib/postgresql/data:rw
       # you may use a bind-mounted host directory instead,
